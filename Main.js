@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var ProductManager_1 = require("./ProductManager");
+var Product_1 = require("./Product");
+var productManager = new ProductManager_1.ProductManager();
+var banh = new Product_1.Product("122", "banh", "banh", 120000, 123123123, "12/2/2020", "asdasdasda");
+var keo = new Product_1.Product("122", "keo", "keo", 120000, 123123123, "12/2/2020", "asdasdasda");
+var duong = new Product_1.Product("122", "duong", "duong", 120000, 123123123, "12/2/2020", "asdasdasda");
+var banhmi = new Product_1.Product("122", "banhmi", "banh", 120000, 123123123, "12/2/2020", "asdasdasda");
+var sua = new Product_1.Product("122", "sua", "sua", 120000, 123123123, "12/2/2020", "asdasdasda");
+productManager.add(banh, keo, duong, banhmi, sua);
+productManager.search("duong");
